@@ -1,0 +1,13 @@
+; Refractive index spectrum for Cu by Ordal
+;
+; M. A. Ordal et al. Optical properties of fourteen metals in the infrared and far infrared: Al, Co, Cu, Au, Fe, Pb, Mo, Ni, Pd, Pt, Ag, Ti, V, and W, <a href="http://dx.doi.org/10.1364/AO.24.004493"><i>Appl. Opt.</i> <b>24</b>, 4493-4499 (1985)</a>
+;
+; lambda/nm    n     k
+517.00 	1.16000000 	2.64000000 
+670.00 	0.39900000 	3.97000000 
+1000.00 	0.53800000 	6.53000000 
+1110.00 	0.57000000 	7.32000000 
+1250.00 	0.62000000 	8.31000000 
+1430.00 	0.69900000 	9.53000000 
+1670.00 	0.81600000 	11.20000000 
+2000.00 	0.87900000 	13.40000000 

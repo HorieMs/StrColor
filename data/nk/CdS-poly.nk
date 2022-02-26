@@ -1,0 +1,27 @@
+;UO 
+;UO CdS-poly.ASC: Values of n and k for polycrystalline cadmium 
+;UO sulphide from various references in HOCII (pg. 592). References
+;UO are 21, 28, 33, 39. 
+;UO 
+;UO Copyright (c) 1995 the Optical Society of America.  Contains data
+;UO from HANDBOOK OF OPTICAL CONSTANTS IN SOLIDS II edited by Edward D.
+;UO Palik. Copyright (c) 1991 by Academic Press, Inc. Reproduced by
+;UO permission of the publisher.
+;UO --------------------------------------------------------------- 
+;UO        nm        n        k
+;UO ---------------------------------------------------------------	
+;N  3
+;L    Wavelength[nm]        n        k
+300.00	2.68000000	0.70000000
+350.00	2.58000000	0.70000000
+400.00	2.55000000	0.70000000
+500.00	2.72000000	0.70000000
+600.00	2.40000000	0.54000000
+700.00	2.35000000	0.47000000
+800.00	2.32000000	0.43000000
+900.00	2.30000000	0.40000000
+1000.00	2.28000000	0.37000000
+1100.00	2.28000000	0.33000000
+1200.00	2.27000000	0.28000000
+1300.00	2.27000000	0.15000000
+1400.00	2.26000000	0.04000000

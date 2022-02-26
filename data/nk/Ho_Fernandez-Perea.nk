@@ -1,0 +1,18 @@
+; Refractive index spectrum for Ho by Fernandez-Perea
+;
+; M. Fernández-Perea, J. I. Larruquert, J. A. Aznárez, J. A. Méndez, L. Poletto, F. Frassetto, A. M. Malvezzi, D. Bajoni, A. Giglia, N. Mahne and S. Nannarone. Transmittance and optical constants of Ho films in the 3–1340 eV spectral range, <a href="http://dx.doi.org/10.1063/1.3556451"><i>J. Appl. Phys.</i> <b>109</b>, 083525 (2011)</a><br>* Numerical data kindly provided by Juan Larruquert.
+;
+; Density: 8.33 g/cm<sup>3</sup>
+;
+; lambda/nm    n     k
+107.81 	0.72461965 	0.86580501 
+112.71 	0.76677638 	0.92920987 
+123.98 	0.86125835 	1.05786240 
+137.76 	1.00282830 	1.19604100 
+154.98 	1.19350780 	1.27564800 
+177.12 	1.37525620 	1.27221400 
+206.64 	1.46563240 	1.21399590 
+247.97 	1.45235050 	1.26658300 
+309.96 	1.44908190 	1.52865010 
+381.49 	1.52595690 	1.85766650 
+413.28 	1.54849020 	1.97084800 

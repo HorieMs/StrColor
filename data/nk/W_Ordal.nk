@@ -1,0 +1,23 @@
+; Refractive index spectrum for W by Ordal
+;
+; M. A. Ordal et al. Optical properties of Al, Fe, Ti, Ta, W, and Mo at submillimeter wavelengths, <a href="http://dx.doi.org/10.1364/AO.27.001203"><i>Appl. Opt.</i> <b>27</b>, 1203-1209 (1988)</a>
+;
+; "We have used a nonresonant cavity to measure, at room temperature, the angle averaged absorptance spectra <i>P</i>(ω) of aluminum, molybdenum, tantalum, titanium, tungsten, and iron in the 30-300-cm<sup>-1</sup> wavenumber region. The real part of the normalized surface impedance spectrum, <i>z</i>(ω) = <i>r</i>(ω) + <i>ix</i>(ω), was determined from <i>P</i>(ω). Measurements were also made on iron from 400 to 4000 cm<sup>-1</sup> using standard reflectance techniques. The <i>r</i>(ω) spectrum was combined with previous measurements by others at higher frequencies and Kramers-Kronig analyses of the resultant combined <i>r</i>(ω) spectra provided <i>ε</i>(ω) = <i>ε</i><sub>1</sub>(ω) + <i>iε</i><sub>2</sub>(ω) and <i>N</i>(ω) = <i>n</i>(o) + <i>ik</i>(ω)."
+;
+; lambda/nm    n     k
+667.00 	3.83126010 	2.90427270 
+714.00 	3.93134910 	2.79240780 
+769.00 	3.77833600 	2.63229540 
+833.00 	3.51906310 	2.76706000 
+909.00 	3.28145720 	3.01009210 
+1000.00 	3.08268710 	3.42083680 
+1050.00 	3.05709340 	3.72240100 
+1110.00 	3.08216490 	3.96933420 
+1180.00 	3.15994490 	4.17915820 
+1250.00 	3.19607570 	4.33675960 
+1330.00 	3.19907780 	4.44608690 
+1430.00 	3.02782490 	4.39013550 
+1540.00 	2.25877820 	4.77412970 
+1670.00 	1.88281910 	5.48810710 
+1820.00 	1.54557980 	6.44533630 
+2000.00 	1.29928080 	7.56594990 

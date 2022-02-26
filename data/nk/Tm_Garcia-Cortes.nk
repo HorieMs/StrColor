@@ -1,0 +1,21 @@
+; Refractive index spectrum for Tm by Garcia-Cortes
+;
+; M. Vidal-Dasilva, M. Fernández-Perea, J. A. Aznárez, J. I. Larruquert, J. A. Méndez, L. Poletto, A. M. Malvezzi, A. Giglia, and S. Nannarone. Transmittance and optical constants of Tm films in the 2.75–1600 eV spectral range, <a href="http://dx.doi.org/10.1063/1.3129507"><i>J. Appl. Phys.</i> <b>105</b>, 103110 (2009)</a><br>* Numerical data kindly provided by Juan Larruquert.
+;
+; Density: 9.33 g/cm<sup>3</sup>
+;
+; lambda/nm    n     k
+107.81 	0.75240751 	0.96683333 
+112.71 	0.78831402 	1.03183330 
+123.98 	0.89305973 	1.15000000 
+137.76 	1.02420380 	1.25000000 
+154.98 	1.17864780 	1.33500000 
+177.12 	1.34275850 	1.37429800 
+190.74 	1.40838720 	1.36610390 
+206.64 	1.44773010 	1.37833330 
+247.97 	1.48934600 	1.44500000 
+288.19 	1.50418860 	1.61583330 
+341.39 	1.56335480 	1.86333330 
+394.59 	1.69231490 	2.16750000 
+447.80 	1.87448490 	2.37333330 
+480.31 	1.97801850 	2.47666670 

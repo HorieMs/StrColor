@@ -58,11 +58,13 @@ def Rcwa1d( pol, lambda0, kx0, period, layer, norder):
     kx = kx0+I*K                    # 回折光の面内波数
     #print(f'wl={lambda0},k0={k0},kc={kc},ks={ks},K={K},kx0={kx0},kx={kx}')
 
-    kzc = np.sqrt((kc**2-kx**2).astype(np.complex)) # 入射側媒質における回折光の波数の法線成分
+    #kzc = np.sqrt((kc**2-kx**2).astype(np.complex)) # 入射側媒質における回折光の波数の法線成分
+    kzc = np.sqrt((kc**2-kx**2).astype(complex)) # 入射側媒質における回折光の波数の法線成分
     np.where((kzc.real+kzc.imag)> 0, kzc, - kzc)    # 符号の修正
    
 
-    kzs = np.sqrt((ks**2-kx**2).astype(np.complex)) # 透過側媒質における回折光の波数の法線成分
+    #kzs = np.sqrt((ks**2-kx**2).astype(np.complex)) # 透過側媒質における回折光の波数の法線成分
+    kzs = np.sqrt((ks**2-kx**2).astype(complex)) # 透過側媒質における回折光の波数の法線成分
 
     if metal[0]:
         np.where((kzs.imag)>0, kzs, - kzs)          # 符号の修正
@@ -73,8 +75,11 @@ def Rcwa1d( pol, lambda0, kx0, period, layer, norder):
     Kzc = np.diag(kzc)/k0           # 入射側回折光の波数の法線成分の対角行列
     Kzs = np.diag(kzs)/k0           # 透過側回折光の波数の法線成分の対角行列
 
-    EpsilonX = np.zeros([nlayer, norder, norder], dtype=np.complex)     # 誘電率のフーリエ係数のToeplitz行列の格納用配列
-    AlphaX = np.zeros([nlayer, norder, norder], dtype=np.complex)       # 誘電率の逆数のフーリエ係数のToeplitz行列の格納用配列
+    #EpsilonX = np.zeros([nlayer, norder, norder], dtype=np.complex)     # 誘電率のフーリエ係数のToeplitz行列の格納用配列
+    #AlphaX = np.zeros([nlayer, norder, norder], dtype=np.complex)       # 誘電率の逆数のフーリエ係数のToeplitz行列の格納用配列
+    EpsilonX = np.zeros([nlayer, norder, norder], dtype=np.complex128)     # 誘電率のフーリエ係数のToeplitz行列の格納用配列
+    AlphaX = np.zeros([nlayer, norder, norder], dtype=np.complex128)       # 誘電率の逆数のフーリエ係数のToeplitz行列の格納用配列
+
 
     for kk in range(0, nlayer):
         if nsect[kk] > 1:
@@ -116,7 +121,8 @@ def Rcwa1d( pol, lambda0, kx0, period, layer, norder):
                 Eigen, W1 = np.linalg.eig(A)    # 式(5.14)右辺の行列の固有値と固有ベクトル
             else:
                 W1= Eye # 層が均質な場合の固有ベクトル
-                Eigen = ((kx/k0)**2-epsr).astype(np.complex)    # 層が均質な場合の固有値
+                #Eigen = ((kx/k0)**2-epsr).astype(np.complex)    # 層が均質な場合の固有値
+                Eigen = ((kx/k0)**2-epsr).astype(complex)    # 層が均質な場合の固有値
             if ii == 0:
                 W00 = W1
 
@@ -169,7 +175,8 @@ def Rcwa1d( pol, lambda0, kx0, period, layer, norder):
                 Eigen, W1 = np.linalg.eig(np.dot( np.linalg.inv( AlphaX[ii, :, :]), A)) # 式(5.39)右辺の行列の固有値と固有ベクトル
             else:
                 W1 = Eye # 層が均質な場合の固有ベクトル
-                Eigen = ((kx/k0)**2-epsr).astype(np.complex)    # 層が均質な場合の固有値
+                #Eigen = ((kx/k0)**2-epsr).astype(np.complex)    # 層が均質な場合の固有値
+                Eigen = ((kx/k0)**2-epsr).astype(complex)    # 層が均質な場合の固有値
 
             if ii == 0:
                 W00 = W1

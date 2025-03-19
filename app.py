@@ -35,8 +35,8 @@ nlayers=1
 nk_idx_subst=0
 nk_idx_film=0
 
-pitch_nm = 1000. # 周期（nm）
-norder=21
+pitch_nm = 500. # 周期（nm）
+norder=11
 
 
 
@@ -266,7 +266,7 @@ nk_subst_name=st.sidebar.selectbox('Substrate',nk_namelist,index=nk_idx_subst,ke
 
 
 
-st.header('Structural color of patterned film using 1D RCWA(rigorous coupled-wave analysis)')
+st.header('Structural color of patterned film using 1D RCWA/FMM')
 
 st.subheader('Film parameters (Number of layers, Period(pitch), Order)')
 
